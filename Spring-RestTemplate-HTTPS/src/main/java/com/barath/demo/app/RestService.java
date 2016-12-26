@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class RestService {
 	
 	private RestTemplate restTemplate=null;
-	private static final String TEST_URL="https://192.168.1.42:8082/RESTCLIENT/test";
+	private static final String TEST_URL="https://localhost:8082/RESTCLIENT/test";
 	
 	public RestService(){
 		this.restTemplate=new RestTemplate();
