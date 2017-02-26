@@ -25,8 +25,8 @@ into the servlet context by creating a bean of ServletRegistrationBean
 
 Test the application by running the application (Run as --> Spring boot app)
 
-### Endpoint : http://localhost:8080/services/
+##### Endpoint : http://localhost:8080/services/
 
-## Output: 
+#### Output: 
 
-### WELCOME TO SPRING WEB MVC APPLICATION
+##### WELCOME TO SPRING WEB MVC APPLICATION
