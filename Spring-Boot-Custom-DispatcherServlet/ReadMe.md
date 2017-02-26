@@ -22,3 +22,11 @@ into the servlet context by creating a bean of ServletRegistrationBean
 		return new DispatcherServlet(context);
 	}
 ```
+
+Test the application by running the application (Run as --> Spring boot app)
+
+### Endpoint : http://localhost:8080/services/
+
+## Output: 
+
+### WELCOME TO SPRING WEB MVC APPLICATION
