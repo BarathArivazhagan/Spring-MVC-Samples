@@ -5,13 +5,13 @@
 A Simple spring boot app with one two end points 
 
 
-Download and import into IDE and run as Spring Boot App 
+### Download and import into IDE and run as Spring Boot App 
 
-Go to browser : http://localhost:8080/ 
+#### Go to browser : http://localhost:8080/ 
 
-hello,welcome to application 
+`hello,welcome to application`
 
 
-Go to : http://localhost:8080/get/barath
+#### Go to : http://localhost:8080/get/barath
 
-hello,welcome barath 
+`hello,welcome barath `
