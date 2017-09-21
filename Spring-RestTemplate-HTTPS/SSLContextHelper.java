@@ -1,4 +1,4 @@
-package com.citi.common.service.accessor;
+package com.barath.app.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
