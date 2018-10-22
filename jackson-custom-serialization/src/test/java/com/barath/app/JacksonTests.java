@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.lang.invoke.MethodHandles;
 import java.util.Objects;
 
-@RunWith(SpringRunner.class)
+
 public class JacksonTests {
 
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
@@ -75,6 +75,15 @@ public class JacksonTests {
 
 		Assert.assertNull(employee.getEmployeeName());
 		Assert.assertNull(employee.getEmployeeId());
+	}
+
+	@Test
+	public void testWithJsonPropertyAnnotation() throws Exception  {
+
+		String teamJson = "{ \"teamName\":\"INDIA\"}";
+		logger.info("team json source {}",teamJson);
+		Team team = mapperWithIgnorUnkownProps.readValue(teamJson, Team.class);
+		logger.info("team {}", Objects.toString(team));
 	}
 
 }
