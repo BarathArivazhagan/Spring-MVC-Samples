@@ -26,6 +26,7 @@ public interface ObjectMapperBuilder {
         Builder  with(SerializationFeature feature);
         Builder with(DeserializationFeature feature);
         ObjectMapper build();
+        Builder clone();
     }
 
 
@@ -42,6 +43,10 @@ public interface ObjectMapperBuilder {
         public Builder with(DeserializationFeature feature){
             mapper.configure(feature , true);
             return this;
+        }
+
+        public Builder clone(){
+            return this.clone();
         }
 
         public ObjectMapper build(){
